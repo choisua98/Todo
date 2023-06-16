@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.layout {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 50px;
+  border: 1px solid #ddd;
+  padding: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  background-color: rgb(216, 223, 223);
+  margin: 0 auto;
+  padding: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.input-box {
+  height: 40px;
+  width: 240px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 12px;
+}
+
+.addbtn {
+  height: 40px;
+  width: 140px;
+  cursor: pointer;
+  color: #fff;
+  background-color: teal;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-left: 280px;
+}
+
+h2 {
+  display: block;
+  font-weight: bold;
+}
+
+.component-style {
+  width: 270px;
+  border: 4px solid teal;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0px 8px 8px 8px;
+}
+
+.title {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.removebtn,
+.donebtn {
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  width: 50%;
+  background-color: #fff;
+}
+
+.removebtn {
+  border: 2px solid red;
+}
+.donebtn {
+  border: 2px solid green;
+}
+
+.btns {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.working {
+  display: flex;
+  flex-wrap: wrap;
 }
